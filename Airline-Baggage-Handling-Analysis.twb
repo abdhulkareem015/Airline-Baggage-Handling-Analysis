@@ -1,0 +1,1478 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='3c8c063fb593d5f89eb819f14776ca641bfdf08775fcec09f38d5d382aa1db92' _.fcp.WorkbookFingerprinting.true...creator-author-id='3c8c063fb593d5f89eb819f14776ca641bfdf08775fcec09f38d5d382aa1db92' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='3c8c063fb593d5f89eb819f14776ca641bfdf08775fcec09f38d5d382aa1db92' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='3c8c063fb593d5f89eb819f14776ca641bfdf08775fcec09f38d5d382aa1db92' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_baggage_handling' inline='true' name='federated.0wnszaa17sfnuh10k1bnz038w1b9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_baggage_handling' name='textscan.1n0k0v51agf2sj16skyn91idr1uw'>
+            <connection class='textscan' directory='C:/Users/Ajmal/Downloads' filename='cleaned_baggage_handling.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1n0k0v51agf2sj16skyn91idr1uw' name='cleaned_baggage_handling.csv' table='[cleaned_baggage_handling#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='baggage_tag' ordinal='0' />
+            <column datatype='string' name='route_type' ordinal='1' />
+            <column datatype='integer' name='transfer_count' ordinal='2' />
+            <column datatype='integer' name='baggage_volume' ordinal='3' />
+            <column datatype='integer' name='route_distance_km' ordinal='4' />
+            <column datatype='string' name='mishandled' ordinal='5' />
+            <column datatype='integer' name='mishandled_flag' ordinal='6' />
+            <column datatype='integer' name='complexity_score' ordinal='7' />
+            <column datatype='string' name='distance_group' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baggage_tag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[baggage_tag]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>baggage_tag</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>route_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[route_type]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>route_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transfer_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transfer_count]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>transfer_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baggage_volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baggage_volume]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>baggage_volume</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>route_distance_km</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[route_distance_km]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>route_distance_km</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mishandled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mishandled]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>mishandled</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mishandled_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mishandled_flag]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>mishandled_flag</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complexity_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[complexity_score]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>complexity_score</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distance_group]</local-name>
+            <parent-name>[cleaned_baggage_handling.csv]</parent-name>
+            <remote-alias>distance_group</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cleaned_baggage_handling.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]' role='measure' type='quantitative' />
+      <column caption='Baggage Tag' datatype='string' name='[baggage_tag]' role='dimension' type='nominal' />
+      <column caption='Baggage Volume' datatype='integer' name='[baggage_volume]' role='measure' type='quantitative' />
+      <column caption='Complexity Score' datatype='integer' name='[complexity_score]' role='measure' type='quantitative' />
+      <column caption='Distance Group' datatype='string' name='[distance_group]' role='dimension' type='nominal' />
+      <column caption='Mishandled' datatype='string' name='[mishandled]' role='dimension' type='nominal' />
+      <column caption='Mishandled Flag' datatype='integer' name='[mishandled_flag]' role='measure' type='quantitative' />
+      <column caption='Route Distance Km' datatype='integer' name='[route_distance_km]' role='measure' type='quantitative' />
+      <column caption='Route Type' datatype='string' name='[route_type]' role='dimension' type='nominal' />
+      <column caption='Transfer Count' datatype='integer' name='[transfer_count]' role='measure' type='quantitative' />
+      <column-instance column='[distance_group]' derivation='None' name='[none:distance_group:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Ajmal/AppData/Local/Temp/TableauTemp/#TableauTemp_00wnwmc0dvdbj418ce5171mj7evm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2026 08:45:21 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>baggage_tag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[baggage_tag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baggage_tag</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>route_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[route_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>route_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transfer_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[transfer_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transfer_count</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>baggage_volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baggage_volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baggage_volume</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>102</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>route_distance_km</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[route_distance_km]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>route_distance_km</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mishandled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mishandled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mishandled</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mishandled_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[mishandled_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mishandled_flag</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>complexity_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[complexity_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complexity_score</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[distance_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance_group</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_baggage_handling.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:distance_group:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Long&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Short&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_baggage_handling.csv' id='cleaned_baggage_handling.csv_4258E6D1640D4B698259080281C624B4'>
+            <properties context=''>
+              <relation connection='textscan.1n0k0v51agf2sj16skyn91idr1uw' name='cleaned_baggage_handling.csv' table='[cleaned_baggage_handling#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='baggage_tag' ordinal='0' />
+                  <column datatype='string' name='route_type' ordinal='1' />
+                  <column datatype='integer' name='transfer_count' ordinal='2' />
+                  <column datatype='integer' name='baggage_volume' ordinal='3' />
+                  <column datatype='integer' name='route_distance_km' ordinal='4' />
+                  <column datatype='string' name='mishandled' ordinal='5' />
+                  <column datatype='integer' name='mishandled_flag' ordinal='6' />
+                  <column datatype='integer' name='complexity_score' ordinal='7' />
+                  <column datatype='string' name='distance_group' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_baggage_handling' name='federated.0wnszaa17sfnuh10k1bnz038w1b9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wnszaa17sfnuh10k1bnz038w1b9'>
+            <column-instance column='[mishandled_flag]' derivation='Avg' name='[avg:mishandled_flag:qk]' pivot='key' type='quantitative' />
+            <column caption='Mishandled Flag' datatype='integer' name='[mishandled_flag]' role='measure' type='quantitative' />
+            <column-instance column='[route_type]' derivation='None' name='[none:route_type:nk]' pivot='key' type='nominal' />
+            <column caption='Route Type' datatype='string' name='[route_type]' role='dimension' type='nominal' />
+            <column-instance column='[transfer_count]' derivation='Sum' name='[sum:transfer_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Transfer Count' datatype='integer' name='[transfer_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='width' value='111' />
+            <format attr='height' field='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]' value='55' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]' />
+              <color column='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{011AB187-7549-4DE9-8FB9-A1BB0F2AA275}' />
+    </worksheet>
+    <worksheet name='Mishandling by Distance Group'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_baggage_handling' name='federated.0wnszaa17sfnuh10k1bnz038w1b9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wnszaa17sfnuh10k1bnz038w1b9'>
+            <column-instance column='[mishandled_flag]' derivation='Avg' name='[avg:mishandled_flag:qk]' pivot='key' type='quantitative' />
+            <column caption='Baggage Tag' datatype='string' name='[baggage_tag]' role='dimension' type='nominal' />
+            <column caption='Distance Group' datatype='string' name='[distance_group]' role='dimension' type='nominal' />
+            <column caption='Mishandled Flag' datatype='integer' name='[mishandled_flag]' role='measure' type='quantitative' />
+            <column-instance column='[baggage_tag]' derivation='None' name='[none:baggage_tag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[distance_group]' derivation='None' name='[none:distance_group:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk]'>
+            <groupfilter function='level-members' level='[none:distance_group:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:baggage_tag:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]</rows>
+        <cols>([federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk] / [federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:baggage_tag:nk])</cols>
+      </table>
+      <simple-id uuid='{617A01FA-7AB8-41BD-B634-5A7053612253}' />
+    </worksheet>
+    <worksheet name='Mishandling by Route Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_baggage_handling' name='federated.0wnszaa17sfnuh10k1bnz038w1b9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wnszaa17sfnuh10k1bnz038w1b9'>
+            <column-instance column='[mishandled_flag]' derivation='Avg' name='[avg:mishandled_flag:qk]' pivot='key' type='quantitative' />
+            <column caption='Baggage Tag' datatype='string' name='[baggage_tag]' role='dimension' type='nominal' />
+            <column caption='Mishandled Flag' datatype='integer' name='[mishandled_flag]' role='measure' type='quantitative' />
+            <column-instance column='[baggage_tag]' derivation='None' name='[none:baggage_tag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[route_type]' derivation='None' name='[none:route_type:nk]' pivot='key' type='nominal' />
+            <column caption='Route Type' datatype='string' name='[route_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]'>
+            <groupfilter function='level-members' level='[none:route_type:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:baggage_tag:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]</rows>
+        <cols>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]</cols>
+      </table>
+      <simple-id uuid='{01A2E5CD-9F5A-46F7-886A-EAC44050DF62}' />
+    </worksheet>
+    <worksheet name='Mishandling by Transfer Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_baggage_handling' name='federated.0wnszaa17sfnuh10k1bnz038w1b9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wnszaa17sfnuh10k1bnz038w1b9'>
+            <column-instance column='[mishandled_flag]' derivation='Avg' name='[avg:mishandled_flag:qk]' pivot='key' type='quantitative' />
+            <column caption='Baggage Tag' datatype='string' name='[baggage_tag]' role='dimension' type='nominal' />
+            <column caption='Distance Group' datatype='string' name='[distance_group]' role='dimension' type='nominal' />
+            <column caption='Mishandled Flag' datatype='integer' name='[mishandled_flag]' role='measure' type='quantitative' />
+            <column-instance column='[baggage_tag]' derivation='None' name='[none:baggage_tag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[distance_group]' derivation='None' name='[none:distance_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[transfer_count]' derivation='Sum' name='[sum:transfer_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Transfer Count' datatype='integer' name='[transfer_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk] / [federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:baggage_tag:nk])</rows>
+        <cols>([federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk] + [federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk])</cols>
+      </table>
+      <simple-id uuid='{A5809F93-4450-4277-A972-C779E1C5DF77}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Airline Baggage Mishandling Analysis </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='860' maxwidth='1220' minheight='560' minwidth='1220' sizing-mode='range' />
+      <datasources>
+        <datasource caption='cleaned_baggage_handling' name='federated.0wnszaa17sfnuh10k1bnz038w1b9' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0wnszaa17sfnuh10k1bnz038w1b9'>
+        <column caption='Distance Group' datatype='string' name='[distance_group]' role='dimension' type='nominal' />
+        <column-instance column='[distance_group]' derivation='None' name='[none:distance_group:nk]' pivot='key' type='nominal' />
+        <column-instance column='[route_type]' derivation='None' name='[none:route_type:nk]' pivot='key' type='nominal' />
+        <column caption='Route Type' datatype='string' name='[route_type]' role='dimension' type='nominal' />
+        <column-instance column='[transfer_count]' derivation='Sum' name='[sum:transfer_count:qk]' pivot='key' type='quantitative' />
+        <column caption='Transfer Count' datatype='integer' name='[transfer_count]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='24' param='vert' type-v2='layout-flow' w='98688' x='656' y='930'>
+            <zone fixed-size='52' h='6977' id='25' is-fixed='true' type-v2='title' w='98688' x='656' y='930'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91163' id='22' param='vert' type-v2='layout-flow' w='98688' x='656' y='7907'>
+              <zone h='91163' id='8' param='horz' type-v2='layout-flow' w='98688' x='656' y='7907'>
+                <zone fixed-size='335' h='91163' id='6' is-fixed='true' type-v2='layout-basic' w='27459' x='656' y='7907'>
+                  <zone h='26028' id='5' name='Heatmap' w='27459' x='656' y='7907'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='65135' id='15' name='Mishandling by Distance Group' w='27459' x='656' y='33935'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='132' h='91163' id='18' is-fixed='true' name='Mishandling by Route Type' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]' type-v2='filter' values='database' w='11476' x='28115' y='7907'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='723' h='91163' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='59262' x='39591' y='7907'>
+                  <zone h='14883' id='20' name='Mishandling by Distance Group' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk]' type-v2='filter' values='database' w='59262' x='39591' y='7907'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6395' id='19' name='Mishandling by Transfer Count' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]' type-v2='filter' values='database' w='59262' x='39591' y='22790'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8488' id='9' name='Heatmap' pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]' type-v2='color' w='59262' x='39591' y='29185'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='98' h='12325' id='10' is-fixed='true' name='Heatmap' pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]' type-v2='size' w='59262' x='39591' y='37673'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='26398' id='12' name='Mishandling by Transfer Count' w='59262' x='39591' y='49998'>
+                    <layout-cache cell-count-h='120' minwidth='362' non-cell-size-h='133' type-h='cell' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='22674' id='11' name='Mishandling by Route Type' w='59262' x='39591' y='76396'>
+                    <layout-cache cell-count-w='2' minheight='195' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Airline Baggage Mishandling Analysis </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='26' param='vert' type-v2='layout-flow' w='98688' x='656' y='930'>
+                <zone fixed-size='52' h='6977' id='25' type-v2='title' w='98688' x='656' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='216' h='26028' id='5' is-fixed='true' name='Heatmap' w='27459' x='656' y='7907'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8488' id='9' name='Heatmap' pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]' type-v2='color' w='59262' x='39591' y='29185'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='98' h='12325' id='10' name='Heatmap' pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]' type-v2='size' w='59262' x='39591' y='37673'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14883' id='20' mode='checkdropdown' name='Mishandling by Distance Group' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk]' type-v2='filter' values='database' w='59262' x='39591' y='7907'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65135' id='15' is-fixed='true' name='Mishandling by Distance Group' w='27459' x='656' y='33935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6395' id='19' name='Mishandling by Transfer Count' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]' type-v2='filter' values='database' w='59262' x='39591' y='22790'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='219' h='26398' id='12' is-fixed='true' name='Mishandling by Transfer Count' w='59262' x='39591' y='49998'>
+                  <layout-cache minwidth='362' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='91163' id='18' mode='checkdropdown' name='Mishandling by Route Type' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]' type-v2='filter' values='database' w='11476' x='28115' y='7907'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='187' h='22674' id='11' is-fixed='true' name='Mishandling by Route Type' w='59262' x='39591' y='76396'>
+                  <layout-cache cell-count-w='2' minheight='195' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{065C931A-E169-4873-A8C8-E879663FF451}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Mishandling by Distance Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:baggage_tag:nk]</field>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:distance_group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DDB56962-4926-43C8-9DC2-2300837EEBDA}' />
+    </window>
+    <window class='worksheet' name='Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[avg:mishandled_flag:qk]</field>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]</field>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{35B850F1-0F89-4D83-9117-77175CE512A7}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Heatmap'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[sum:transfer_count:qk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Mishandling by Distance Group' />
+        <viewpoint name='Mishandling by Route Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Mishandling by Transfer Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{268E867F-638E-4492-9320-4CC78487015B}' />
+    </window>
+    <window class='worksheet' name='Mishandling by Route Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:baggage_tag:nk]</field>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[none:route_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{17995172-91B1-462D-B1C8-1D0E230AFF18}' />
+    </window>
+    <window class='worksheet' name='Mishandling by Transfer Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wnszaa17sfnuh10k1bnz038w1b9].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1D3831D6-40AD-4674-AC04-D4763D411B50}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      SZyV1U+/of0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Heatmap' width='192'>
+      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
+      27JEAM0kAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Mishandling by Distance Group' width='137'>
+      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
+      XltWsWHZU/jufYGFBdD9vBsviTFd59007l3LM78twTt+HKktR9jtS+dTX3uUD6Vd+VDS30eZ
+      uC8SwNF5N6FmGhqaCV3DthWJmPp7JO66JpFeoUjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjE
+      pEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjE
+      pEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjE5LrHhjs3FKmSbau3Un7pOlnTmX9X5qVLBxSXReLg
+      UKTmY5SUe5n11Rl0yicqrut7Bxh3nW4cHIrE8eMcG5lNTlISSR3/xIX1KbGu5KpInBuKBM1V
+      PqJvHhK+ne1HXBWJPRSp5/w11aQnRFNbW0ttbS2Nl06sGMBcdk3i1FAkiEzPI77sNV4pB874
+      2Lv/BINyZvH5BbMZ2+GyREORXMCpoUhDp85l/tSOS4IceW0FT69OYcWXpl6Y56mhSH2cc0OR
+      uhPFyI9/lIJ33qUszFt2G1dF4txQpMsIhQh5PAN+wqerInFuKNJuXl21g+PNHU9bQY5seIOD
+      d97OhOvfc1dz3ygTR4YiBTm5Yx1r/roDX1QG44fDsX2VNGXex2NLppFhHEr6+ygT90UCODkU
+      KdjYdvvrGezFe5UzgRWJmPp7JO66JpFeoUjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjE
+      pEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjEpEjE9H/HsMzXe8ErMQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Mishandling by Route Type' width='137'>
+      iVBORw0KGgoAAAANSUhEUgAAAIkAAADACAYAAAAwc0BtAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAJOElEQVR4nO3dbUxUVx7H8Z+dTjrDMANobRmoFlCMrsE64G5SsiazSk10YzU1GUujkRe8
+      0Jiu2Vb7gInGSapxXbMh5c0WG22k9aGrYmTXhnRXNqxtsmhEUcZOJ5RoHZ6K8nRH2ZnL3RdK
+      hRmG/xChcJ3f5x2Hc67nhm/uPUOiTtM0TQPRKJ6Z7A3Q1MdISMRISMRISMRISMRISMRISMRI
+      xkEgEJjsLUwoRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIiRkIi
+      RkIiRkIiRkIiRkIiRkIiRkIiRkIiRkKiZyd7A2Om9qDh3CGcrPGhEzMw1+lC8eoc2AyjLkKP
+      twaVVbXwdPQDsGFOwTq4nPOGrItlTpzSdCWkeT5/Vys5ek3rDmmaFurWrh0t0d793KOFRlnl
+      /bJEKymt1Opv92n/0zQtdP8nrfHUR9p7h69p98cwJxpFUcbj5qYsfUXSdUE7sPOU1jS0iFCT
+      dmrnAe1CV/RlLXfujBDRFe3QlsPatTHMieZpj0RXZxLV50VnrgOZQx//hkw4cjvh9alR16Wm
+      pSHijaH0oS/JhsQxzIlXuoqko70V6XZ7xLjdno7W9o7YLxS8jfNlldBWOZH5JHPihO4Ormaz
+      KWLMZDYDXbGtV3znUV5eA/PaD/D2q9PHPCfaXw7v7e2NbQM6pLtIVFUFwl4MD8ckCnxny1B2
+      +UVs3LEXec+P9JFFnpOQkBAxFggEYLVaY7sBHdJVJGZzAvwtbQDSho23tfiRkGgeZaWC+k/d
+      OGZwwb07L8pH2ljmxCddnUmSsrIRuuHB3WGjd+G5EUJ2VlLUdcq3h1GhurCrKPoPP5Y58UpX
+      kWD2UhQYqnGmXvl5SKk/g2pDAZbOHhx5AP/1S2i6N/h1N+ou3kH+a3mwRL1wLHPil65eN8B0
+      OLcUotm9E3suOpCBZly59TKKdjnx+HjZhauny+F/fQmyUgDgFpqb+nD9kw9RF3G9xdiwbz0W
+      xjQnfk3TND3+s+FBKF0KgjDCkmyBcZJ3EwgERjzQPi109iQZZIQlOXmyNxE39HUmoUnBSEjE
+      SEjESEjESEik0083+rKm5Phkb2FMzu59c9jXfJKQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQ
+      iJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQ
+      iJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQ
+      iJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQiJGQSH//Db3ag4Zzh3CyxodO
+      zMBcpwvFq3NgM4y6CD3eGlRW1cLT0Q/AhjkF6+Byzhu2Lnj7P/isohJXm/vxXMYrWLthE347
+      yzjBNzT16SwSFTdPuHF8YBPeP/gObOhBw7H9cJ8wYv9b8xGtk+//tgtH/L+By7UDhS9Z8MyD
+      Tnj/8Vd8dHQ19hTlwAQAd2tQWnoJi7btQ/EsI4K3q1FaWopQyXY4p/+CtzgF6et1012LqsZ8
+      FBc+enIYbMgpLEZ+YxVqu6Mvs+ZvhfsPa/DKSxYYARhMM7DgjVWY99/L+P7RnJtfVcG0bgtW
+      PHpyGGetwJZ1JlR9dXOi72rK01Ukqs+LzlwHMoc+MgyZcOR2wutTo65LTUuLfMoofehLsiER
+      AOCHz5uBPIdl2BSLIw8ZXh/847N93dJVJB3trUi32yPG7fZ0tLZ3xH6h4G2cL6uEtsqJTABA
+      O9r605BqCptnSkVafxvan2DPTwOdnUkAszn8JwmYzGagK7b1iu88ystrYF77Ad5+dchhw2yG
+      OfJPgzlsMBAIjHjd3t7e2DagA+H3ortIVFUFwl4eD8ckCnxny1B2+UVs3LEXec+HvYAGVAxE
+      rBmAGjaYkJAQMSsQCMBqtcawB30IvxddRWI2J8Df0gYgbdh4W4sfCYmRz4HHFNR/6sYxgwvu
+      3XkjfFw2wdztR4sKpA39ntoCf7cZc8dn+7qlqzNJUlY2Qjc8uDts9C48N0LIzkqKuk759jAq
+      VBd2FY0UCABkYE62F57vhj+R1O888GbPQcaTb13XdBUJZi9FgaEaZ+qVn4eU+jOoNhRg6ezB
+      kQfwX7+EpnuDX3ej7uId5L+WBwuiMWHJslw0VFbDP9iJ6kd1ZQNyly1B5CkovujqdQNMh3NL
+      IZrdO7HnogMZaMaVWy+jaJcTj4+gXbh6uhz+15cgKwUAbqG5qQ/XP/kQdRHXW4wN+9ZjIQDD
+      /PXYtuTP+FPJdSz8VTK6Gm9gYPl72D5/1F/lxoVpmqZpk72JsQtC6VIQhBGW5Ie/IBsv6oNe
+      9D5QYTBZYTXFFkggEBjxQDtoTcnx8dreL+Ls3jeHfa2zJ8kgIyzJyRNyZYPJiuR4f7+E0deZ
+      hCYFIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyER
+      IyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyER
+      IyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyER
+      IyERIyERIyERIyERIyERIyERIyERIyERIyERIyERIyHRs5O9gTFTe9Bw7hBO1vjQiRmY63Sh
+      eHUObIYY1gbbUXe6Apdf2IjNv5sZ/k20151Gxd/r0dEP4LmZWPz7DXjj1y/AOAG3oSc6i0TF
+      zRNuHB/YhPcPvgMbetBwbD/cJ4zY/9Z8RO0keA+er79AxT9/QnJKF+7b1IgprdUH8JdGB4q2
+      ubEgxYjgPQ++/uwgDtz7I0pWpE7oXU11+nrddNeiqjEfxYWPnhwGG3IKi5HfWIXa7ujLWv/9
+      Bf6FZdi+bzc25qaMMOMHfHPBhrWbV2JBysPnhjFlAVZuXgvbhW/ww4TcjH7oKhLV50VnrgOZ
+      Qx8Zhkw4cjvh9UU+HQalFmzF1pULkBL1vZGIRKuCQCBsOBCAYk1E4hPuW+90FUlHeyvS7faI
+      cbs9Ha3tHU9w5ZlYXrQIlz4+grofFQQRhPJjHY58fAmLipYj/PQSb/4PTx2G2sCVK/kAAAAA
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Mishandling by Transfer Count' width='192'>
+      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
+      ZKroKpBY7X8Bl0iy4DUNb/gAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
